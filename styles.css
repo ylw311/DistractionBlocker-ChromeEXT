@@ -1,0 +1,12 @@
+/* Adding an overlay to mask the bottom of the screen */
+.overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px; 
+    /* assuming dark themed */
+    background-color: rgb(0, 0, 0); 
+    z-index: 9999; 
+  }
+  

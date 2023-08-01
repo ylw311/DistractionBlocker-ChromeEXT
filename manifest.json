@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Instagram Redirect",
+  "version": "0.1.0",
+  "icons": {
+    "128": "lw_logo.png"
+    },
+  "permissions": ["webRequest", "webRequestBlocking", "tabs", "<all_urls>"],
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
