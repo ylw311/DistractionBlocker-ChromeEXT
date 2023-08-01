@@ -1,18 +1,23 @@
 {
-  "manifest_version": 2,
-  "name": "Instagram Redirect",
-  "version": "0.1.0",
+  "manifest_version": 3,
+  "name": "Distraction Blocker",
+  "version": "0.0.1",
+  "description": "Redirects Instagram to inbox only",
   "icons": {
     "128": "lw_logo.png"
-    },
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Distraction Blocker"
+  },
   "permissions": ["webRequest", "webRequestBlocking", "tabs", "<all_urls>"],
+ 
   "background": {
-    "persistent": true,
-    "scripts": ["background.js"]
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["https://www.instagram.com/*"],
+      "matches": ["<all_urls>"],
       "js": ["content.js"],
       "css": ["styles.css"]
     }

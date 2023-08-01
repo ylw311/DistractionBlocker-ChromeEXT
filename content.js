@@ -29,3 +29,27 @@ function isNotInboxUrl() {
   });
   
 
+
+
+
+// blocking sites completely
+const websitesBlocked = ["youtube"]; 
+
+function isBlockedWebsite(url) {
+  return websitesBlocked.some((blocked) => url.includes(blocked));
+}
+
+function createBlackoutOverlay() {
+  const overlay = document.createElement("div");
+  overlay.id = "distraction-blocker-overlay";
+  document.body.appendChild(overlay);
+}
+
+function handlePageLoad() {
+  if (isBlockedWebsite(window.location.href)) {
+    createBlackoutOverlay();
+  }
+}
+
+window.addEventListener("load", handlePageLoad);
+

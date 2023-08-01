@@ -23,3 +23,18 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
     redirectToInbox(sender.tab.id);
   }
 });
+
+
+// blackout overlay
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message === "removeOverlay") {
+    removeBlackoutOverlay();
+  }
+});
+
+function removeBlackoutOverlay() {
+  const overlay = document.getElementById("distraction-blocker-overlay");
+  if (overlay) {
+    overlay.remove();
+  }
+}
