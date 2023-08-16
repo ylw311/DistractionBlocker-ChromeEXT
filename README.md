@@ -1,6 +1,6 @@
 # DistractionBlocker-ChromeEXT
 
-As per request here's a chrome extension that redirects any Instagram pages, excluding DMs, back to your inbox - sorry, no reels for you :)
+Chrome extension that redirects any Instagram pages, excluding DMs, back to your inbox - sorry, no reels for you :)
 
 Blocks youtube and reddit too 
 
@@ -9,10 +9,12 @@ Blocks youtube and reddit too
 
 <hr>
 
+<em> Didn't bother publishing because it's very small but feel free to use it as a starter template for your own customizations</em>
+<br><br>
 **Usage:** (or to modify yourself)
 1. Download the repo and save it as a folder (unzip it if downloaded as a zip file).
 2. Visit ' [chrome://extensions/](chrome://extensions/)' and toggle on developer mode.
 3. Click "Load Unpacked" and select the downloaded folder.
 4. Enable the extension
-5. To modify yourself just open the folder as a workspace project folder - remember to refresh (the extension and the webpage) to see any changes you've made.
+5. To modify yourself just open the folder as a workspace project folder - remember to refresh (the extension and the webpage) if you made any changes.
 
