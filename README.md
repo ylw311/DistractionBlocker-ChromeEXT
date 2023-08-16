@@ -9,7 +9,7 @@ Blocks youtube and reddit too
 
 <hr>
 
-<em> Didn't bother publishing because it's very small but feel free to use it as a starter template for your own customizations</em>
+<em> Didn't bother publishing because it's very small but could be helpful as a starter template for your own customizations</em>
 <br><br>
 **Usage:** (or to modify yourself)
 1. Download the repo and save it as a folder (unzip it if downloaded as a zip file).
